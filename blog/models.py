@@ -7,9 +7,9 @@ class Post(models.Model):
     body = models.TextField()
 
 
-def __str__(self):
-    return self.title
+    def __str__(self):
+        return self.title
 
-def get_absolute_url(self): # new
-    return reverse('post_detail', args=[str(self.id)])
+    def get_absolute_url(self): # new
+        return reverse('post_detail', args=[str(self.id)])
 # Create your models here.
